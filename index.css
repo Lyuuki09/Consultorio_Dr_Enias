@@ -1,0 +1,369 @@
+body{
+    margin: 0;
+    background: rgb(80,192,138);
+    background: linear-gradient(to bottom, rgba(80,192,138,1) 0%, rgba(46,171,157,1) 81%, rgba(192,255,248,1) 100%);
+    
+}
+
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}    
+.navConsulta {
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+    width: 100vw
+}
+.menu-selecionado {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #70B9B4 !important;
+    width: fit-content !important;
+}
+
+.imgLogo{
+    background-image: url("img/LogoHorizontalBRACA.png");
+    width: 20%;
+    height: 6.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+    margin-left: 0%;
+    
+}
+
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#barrinha{
+    background-color: white;
+    width: 2px;
+    height: 40px;
+}
+
+.navConsulta a:hover{
+    font-size: calc(25px * 1.3);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+
+h1{
+    margin: 0 auto;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 1px 1px 3px  black;
+}
+#container-itens{
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+
+    width: 25%;
+    height: 80%;
+}
+.titulo-container,p{
+    color: white;
+    text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.466);
+    text-align: center;
+}
+p{
+    font-size: 31px;
+
+}
+.titulo-container{
+    white-space: nowrap;
+    font-size: 37px;
+}
+.titulo-container img{
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    bottom:1rem;
+   
+}
+
+.container-Enias{
+    width: 100%;
+    height: 95vh;
+    background-color: white;
+    display: flex;
+}
+.texto-Enias{
+    width: 60%;
+    height: 100%;
+    
+}
+h2{
+    margin: 0 auto;
+    color: #29725B;
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto-Enias p{
+    color:#29725B;
+    font-size: 27px;
+    text-shadow: none;
+    text-align: center;
+}
+.container-titulo-Enias{
+    width: 100%;
+    height: 25%;
+   
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-texto-Enias{
+    
+    width: 100%;
+    height: fit-content
+}
+.imgEnias{
+    
+    width: 50%;
+    height:95vh;
+    position: absolute;
+    left: 50%;
+   
+}
+.imgEnias img{
+    width: 100%;
+    height: 100%;
+    
+}
+h3{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px  black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#container-tratamentos{
+    width: 100%;
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.item-tratamentos{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-comentarios{
+    width: 100%;
+    height: 85vh;
+
+}
+.container-comentarios img{
+    width: 100%;
+    height: 100%;
+}
+.titulo-tratamentos{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.5);
+    font-size: 41px;
+    text-align: center;
+}
+
+.texto-tratamentos{
+    border-left: 1px solid white;
+    padding-left: 1%;
+    padding-right:1% ;
+    border-right:1px solid white ;
+    text-align: center;
+    width: 80%;
+    height: 65%;
+    color: white;
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.411);
+    font-size: 21px;
+
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.mapBox{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#escritaa{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.411);
+    
+}
+.mapa h3{
+    font-size: 90px;
+}
+html,body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.fixed-footer {
+    display: flex;
+    flex-direction: row;
+    top: 0%;
+    width: 100%;
+    height: min-content; /* Altura fixa para o rodapé */
+    background-color: #ffffff;
+    color: #B0B0B0;
+
+}
+footer {
+    background-color: #ffffff;
+    color: #B0B0B0;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+}
+.Rodape{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.movable-text1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.movable-text2 {
+    
+    margin-left: 150px;
+    margin-top: -30px;
+    font-size: 24px;
+}
+.movable-text3 {
+    
+    margin-left: 150px;
+    margin-top: 70px;
+    font-size: 24px;
+}
+.movable-text4 {
+    margin-left: 150px;
+    margin-top: -55px;
+    background-color: #B8F6C2;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 24px;
+}
+.movable-text5 {
+    margin-left: 210px;
+}
+.movable-text6 {
+    font-size: 24px;
+}
+.movable-text7 {
+    margin-left: 210px;
+}
+.movable-text8 {
+    font-size: 24px;
+}
+.movable-text9 {
+    margin-left: 210px;
+}
+.movable-text10 {
+    font-size: 24px;
+}
+.movable-text11 {
+    margin-left: 150px;
+    margin-top: 0px;
+    background-color: #B8F6C2;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 24px;
+}
+.movable-text12 {
+    margin-left: 180px;
+}
+
+.movable-text14 {
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.containerI{
+    text-decoration: none;
+    box-shadow: none;
+    position: relative;
+    left: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.movable-text4{
+    position: relative;
+    right: 80px;
+}

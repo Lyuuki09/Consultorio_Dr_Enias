@@ -1,0 +1,19 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+} 
+body{
+    background: linear-gradient(to bottom, rgba(112,180,165,1) 54%, rgba(255,255,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+    background-color:black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+}
+

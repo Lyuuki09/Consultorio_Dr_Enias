@@ -1,0 +1,173 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}    
+.navConsulta {
+    font-size: 25px;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+    background-color: #70B9B4;
+    width: 100%
+    
+}
+
+body{
+    margin: 0;
+    background-color: #70B9B4;
+}
+.imgLogo{
+    background-image: url("img/LogoHorizontalBRACA.png");
+    width: 20%;
+    height: 6.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+    margin-left: 0%;
+    
+}
+
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.navConsulta a:hover{
+    font-size: calc(25px * 1.4);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+
+h1{
+    color: white;
+    margin-top:3%;
+    margin-left: 3%;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 15%;
+    background-color: white;
+    height: 1px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+  
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container-item{
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+}
+.texto{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.texto:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.texto:not(:hover){
+    transform: scale(1);
+    transition: 300ms;
+}
+.infpaciente{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infpaciente img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+ 
+
+    
+}
+.nome p{
+    margin: 0px !important;
+    font-size: 30px;
+}
+h5{
+    
+    color:#BBB6B6;
+    font-size: 20px;
+    margin: 0px!important;;
+}
+p{
+    color: black;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:12%;
+    
+}
+h4{
+    margin: 0px;
+    color:#BBB6B6;
+    font-size: 18px;
+    margin-left:10% ;
+}
+  
+
+.nome{
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+   
+}
+.info-idade,.info-observacao,.info-horario,.info-visita{
+    width: 100%;
+    height: 17%;
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly; 
+    flex-direction: column;
+    
+}
+

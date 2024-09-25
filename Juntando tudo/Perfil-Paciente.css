@@ -1,0 +1,181 @@
+ *{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}
+body{
+      background-color: #70B9B4;
+ }    
+.navConsulta {
+    font-size: 25px;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+  background-color: #70B9B4;
+  width: 100%
+        
+ }
+
+body{
+     margin: 0;
+ }
+.imgLogo{
+       background-image: url("img/LogoHorizontalBRACA.png");
+      width: 20%;
+      height: 6.25rem;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+      background-position-y: 60%;
+      margin-left: 0%;
+        
+}
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.navConsulta a:hover{
+    font-size: calc(25px * 1.4);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+
+h3{
+    margin-left: 10%;
+    color: white;
+}
+h3::after{
+    display: block;
+    content: "";
+    background-color: white;
+    width: 8%;
+    height: 1px;
+}
+h3::before{
+    display: block;
+    content: "Perfil Paciente";
+    color: white;
+    font-size: 10px;
+    width: 8%;
+    border-bottom: 1px solid white;
+}
+.container{
+    width: 100%;
+    height: 85vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.perfil{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+}
+.infopaciente{
+    width: 100%;
+    
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nomePaciente img{
+    background-repeat: no-repeat;
+    background-image: cover;
+    width: 45%;
+    height: 90%;
+    border-radius: 50%;
+}
+.nomePaciente{
+    width: 20%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nomecompleto{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    margin: 0 auto;
+    color: black;
+    font-size: 30px;
+}
+h4{
+    margin: 0 auto;
+    color:#BBB6B6;
+}
+
+input{
+    border-radius: 5px;
+    background-color: #F2F0F0;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 4%;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    
+    border: none;
+    height: 7%;
+}
+input::placeholder{
+    color: #BBB6B6;
+    font-size: 17px;
+    position: relative;
+    left: 1%;
+}
+.container-exames{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+   
+    height: 69%;
+}
+.itemgrid{
+    background-color:#F2F0F0;
+    width: 80%;
+    height: 40%;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    color: #0000FF;
+    text-shadow:1px 2px 4px  rgba(0, 0, 0, 0.144);
+    text-decoration: underline;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemgrid img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 100%;
+}
+
+.itemgrid:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 200ms;
+}

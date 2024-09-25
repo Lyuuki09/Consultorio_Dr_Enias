@@ -1,0 +1,371 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}    
+.navConsulta {
+    font-size: 25px;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+    background-color: #70B9B4;
+    width: 100%
+    
+}
+.menu-selecionado {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #70B9B4 !important;
+    
+    width: fit-content !important;
+}
+body{
+    margin: 0;
+}
+.imgLogo{
+    background-image: url("img/LogoHorizontalBRACA.png");
+    width: 20%;
+    height: 6.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+    margin-left: 0%;
+    
+}
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.navConsulta a:hover{
+    font-size: calc(25px * 1.4);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+.menuConsulta{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+
+}
+#pesquisaConsulta{
+    
+    width: 93rem;
+    height: 3.75rem;
+    border: 0px;
+    background-color: #EAEAEA;
+   
+    font-size: 24;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+}
+#pesquisaConsulta:focus{
+    background-color: #e0e0e0;
+
+    & .fundolupa{ background-color: #000000;
+    }
+}
+
+
+
+#ano{
+    
+    position: absolute;
+    left:calc(50% + 10rem) ;
+    font-size: 35px;
+    color: #4F4F4F;
+    width: fit-content;
+    font-weight: bolder;
+ }
+#ano img:hover{
+    
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder {
+    color: #BBB6B6;
+    font-size: 24px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.fundolupa{
+    margin-top:0.3em ;
+    left: calc(100% - 8em);
+    background-repeat: no-repeat;
+    background-color: #CFCCCC;
+    width: 3.4em;
+    height: 3.4em;
+    position: absolute;
+    border-radius: 10%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.imglupa{
+    background-image: url("img/lupa.png");
+    width: 2.5em;
+    height: 2.5em;
+    background-size: contain;
+}
+
+.paciente{
+    width: 16rem;
+    height: 6rem;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    display: flex;
+    
+    align-items: center;
+}
+
+#fotopaciente{
+    height: 5rem;
+    width: 5rem;
+    border-radius:50% ;
+    background-image: url("img/Paciente.jpeg");
+    background-size: cover;
+    
+}
+#infPaciente{
+    height: 6.25rem;
+    width:10.625rem;
+    color: #BBB6B6;
+    font-size: 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#nome{
+    color:#4F4F4F;
+    font-size: 20;
+    
+}
+
+.infoConsulta{
+    margin-top: 30px;
+    width: 18.35%;
+    height: 90vh;
+
+    border-right: 1px solid #767575;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.itemSelecionado{
+    color:#767575;
+    margin: 10px;
+     
+}
+
+.itemEscolhido{
+    color:#6C6C6C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+}
+
+.container-marcarConsulta{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mes-selecionado{
+    margin-top: 80px;
+    width:100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#caixa-mes{
+    width: 45rem;
+    height: 45rem;
+    background-color:#D9D9D9;
+    border-radius: 10%;
+    margin-left: 8%;
+}
+#caixa-mesSelecionado{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.Nome-mesSelecionado{
+    background-color: white;
+    width: 80%;
+    height: 60%;
+    text-align: center;
+    color:#4F4F4F;
+    font-size: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+}
+#container-diaDasSemanas{
+    width: 100%;
+    height: 10%;
+    
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#Domingo{
+    color: #FF0E0E;
+    
+}
+.outrosDias{
+    color: black
+}
+
+.container-diasDoMes{
+    height: max-content;
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.dia{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-top: 25%;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    border: 0px;
+}
+.dia:hover:not(.escolhido,.vazio,.feriado){
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    align-items: center;
+
+}
+.escolhido{
+   opacity: 60%!important;
+    color: hsla(0, 0%, 0%, 0.333);
+}
+
+.vazio{
+    background-color: transparent;
+}
+
+
+.feriado{
+    color: #FF0000!important;
+    cursor: default!important;
+}
+
+.BtnVoltar{
+    width: 3%;
+    height: 60%;
+    background-color:#70B9B4;
+    
+    box-shadow: 0px 5px 15px -8px  rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    position: relative;
+    right: 8.3%;
+}
+.BtnVoltar:hover{
+    transform: scale(1.1);
+    background-color: rgb(104, 175, 171);
+    cursor: pointer;
+   
+}
+.container-button{
+    width: 100%;
+    height: 10%;
+   
+    position: absolute;
+    top: 110%;
+    display: flex;
+    justify-content: space-around;
+}
+.BtnProximo{
+    width: 9%;
+    height: 50%;
+    background-color:#70B9B4;
+   
+
+    box-shadow: 0px 5px 15px -8px  rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+    position: relative;
+    left: 4%;
+}
+.BtnProximo:hover{
+    transform: scale(1.1);
+    background-color: rgb(104, 175, 171);
+    cursor: pointer;
+}
+.BtnVoltar a{
+    width: 100%;
+    height: 100%;
+}
+.BtnVoltar img{
+    position: relative;
+    top: 30%;
+}
+.BtnProximo a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.dia a{
+    width: 100%;
+    height: 100%;
+}

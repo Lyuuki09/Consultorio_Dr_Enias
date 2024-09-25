@@ -1,0 +1,175 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+} 
+body{
+    background: linear-gradient(to bottom, rgba(112,180,165,1) 78%, rgba(255,255,255,1) 100%);
+    height: fit-content;
+}
+nav{
+    width: 100%;
+    display: flex;
+    
+    align-items: flex-start;
+    margin-top: 1.5%;
+
+}
+.navbar{
+    position: relative;
+    left: 3%;
+    width: 100%;
+}
+.imglogo{
+    margin-left: 2%;
+    background-image: url("img/Logo.png");
+    background-repeat: no-repeat;
+    background-position-y:-10px ;
+    background-size: contain;
+    position: relative;
+    bottom: 10px;
+    width: calc(476px * 0.6);
+    height: calc(281px * 0.6);
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-left: 1px solid white;
+    font-size: 24px;
+    text-shadow:1px 2px 4px  rgba(0, 0, 0, 0.37);
+}
+
+a:hover{
+    font-size: calc(24px * 1.4);
+    transition: 200ms;
+
+}
+a:not(:hover){
+    font-size:24px;
+    transition: 200ms;
+}
+
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 3px 3px  rgba(0, 0, 0, 0.288);
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil{
+    margin-top: 5%;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    background-color:#9BCAC0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+}
+
+input::placeholder{
+    color: #919191;
+    font-size:20px;
+    
+}
+input{
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    border-radius:10px ;
+    width: 80%;
+    height: 5%;
+    border:none;
+}
+
+input:invalid {
+    border: 2px solid red;
+    background-color: #ffdddd;
+    animation: erro 100ms;
+    
+}
+
+@keyframes erro{
+    0%{transform: translateY(5%);}
+    100%{transform: translateY(-5%);}
+}
+.botoes{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 55%;
+    height: 22%;
+    margin-top: 3%;
+    border:none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    font-size: 25px;
+}
+#google{
+    border: 1px solid black!important;
+    
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+#apple{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+   
+}
+#cadastro{
+    border: 2px solid white;
+    background-color: #5AA69D;
+    color: white;
+    font-size: 30px!important;
+    display: flex;
+    justify-content: center;
+}
+.imgicong{
+    position: relative;
+    left: -15%;
+    background: url('img/iconGoogle.png') 50% / cover no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.imgicona{
+    position: relative;
+    left: -18%;
+   border-radius:10% ;
+    background: url('img/iconApple.png') 50% / cover no-repeat;
+    width: 2.5rem;
+    height: 3.1rem;
+}
+button:hover , a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 100ms;
+}
+
+
+
+  

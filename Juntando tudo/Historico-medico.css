@@ -1,0 +1,251 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}    
+.navConsulta {
+    font-size: 25px;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+    background-color: #70B9B4;
+    width: 100%
+    
+}
+.menu-selecionado {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #70B9B4 !important;
+    
+    width: fit-content !important;
+}
+body{
+    margin: 0;
+    background-color: #70B9B4;
+}
+.imgLogo{
+    background-image: url("img/LogoHorizontalBRACA.png");
+    width: 20%;
+    height: 6.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+    margin-left: 0%;
+    
+}
+
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.navConsulta a:hover{
+    font-size: calc(25px * 1.4);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+.menuConsulta{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left:3.125rem;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil{
+    width: 80%;
+    height: 85%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+}
+.titulo{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 20% 40% 25% 15%;
+    text-align: center;
+    align-items: center;
+    
+    color: #4F4F4F;
+    font-size: 32px;
+}
+
+.item{
+    white-space: nowrap;
+    border-right:3px solid #D3D3D3;
+
+    text-align: center;
+}
+.container-informacoes{
+    width: 100%;
+    height: 85%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informacoes{
+    display: grid;
+    grid-template-columns: 18.5% 42% 26% 13.5%;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+
+}
+.foto,.nome,.data,.horario{
+    
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &:not(.horario){
+        border-right: 3px solid #4F4F4F;
+    }
+
+}
+.foto-paciente{
+    background-color: red;
+    border-radius: 50%;
+    width: 30%;
+    height: 15%;
+}
+.nome-paciente{
+    width: 500px;
+    font-size: 31px;
+    
+    text-align: center;
+    
+    white-space: nowrap;
+    
+    height: 15%;
+    
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.foto-paciente::after{
+    
+    content: "";
+    width: 200%;
+    height: 3px;
+    background-color: #CFCCCC;
+    left: -50%;
+    display: block;
+    position: relative;
+    transform: translateY(3000%);
+
+}
+.nome-paciente::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #CFCCCC;
+    
+    display: block;
+    position: relative;
+    transform: translateY(900%);
+    
+
+}
+.data-perfil::after{
+    content: "";
+    width: 170%;
+    height: 3px;
+    background-color: #CFCCCC;
+    right: 30%;
+    display: block;
+    position: relative;
+    transform: translateY(1290%);
+}
+.data-perfil{
+    font-size: 23px;
+    color: #4F4F4F;
+    text-align: center;
+    
+    white-space: nowrap;
+    
+    height: 15%;
+}
+
+.horario-perfil{
+    font-size: 23px;
+    color: #4F4F4F;
+    text-align: center;
+    
+    white-space: nowrap;
+    
+    height: 15%;
+}
+.horario-perfil::after{
+    content: "";
+    width: 170%;
+    height: 3px;
+    background-color: #CFCCCC;
+    right: 30%;
+    display: block;
+    position: relative;
+    transform: translateY(1290%);
+}
+
+.img1{
+    background-image: url("img/paciente1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    background-image: url("img/paciente2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img3{
+    background-image: url("img/paciente3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img4{
+    background-image:url("img/paciente4.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img5{
+    background-image: url("img/paciente5.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

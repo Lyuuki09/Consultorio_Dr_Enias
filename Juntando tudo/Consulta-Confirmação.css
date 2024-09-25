@@ -1,0 +1,286 @@
+*{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+
+}    
+.navConsulta {
+    font-size: 25px;
+    background-color: #70B9B4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+    background-color: #70B9B4;
+    width: 100%
+    
+}
+.menu-selecionado {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #70B9B4 !important;
+    
+    width: fit-content !important;
+}
+body{
+    margin: 0;
+}
+.imgLogo{
+    background-image: url("img/LogoHorizontalBRACA.png");
+    width: 20%;
+    height: 6.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+    margin-left: 0%;
+    
+}
+
+.navConsulta a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.navConsulta a:hover{
+    font-size: calc(25px * 1.4);
+    transition: 200ms;
+
+}
+.navConsulta a:not(:hover){
+    font-size:25px;
+    transition: 200ms;
+}
+.menuConsulta{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left:3.125rem;
+
+}
+
+.paciente{
+    width: 16rem;
+    height: 6rem;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    display: flex;
+    
+    align-items: center;
+}
+
+#fotopaciente{
+    height: 5rem;
+    width: 5rem;
+    border-radius:50% ;
+    background-image: url("img/Paciente.jpeg");
+    background-size: cover;
+    
+}
+#infPaciente{
+    height: 6.25rem;
+    width:10.625rem;
+    color: #BBB6B6;
+    font-size: 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#nome{
+    color:#4F4F4F;
+    font-size: 20;
+    
+}
+
+.infoConsulta{
+    margin-top: 30px;
+    width: 22.513rem;
+    height: 90vh;
+
+    border-right: 1px solid #767575;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+}
+
+.itemSelecionado{
+    color:#767575;
+    margin: 10px;
+     
+}
+
+.itemEscolhido{
+    color:#6C6C6C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+}
+
+.container-marcarConsulta{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.informacoes{
+    margin-top: 30px;
+    width: 100%;
+    
+    height: 90%;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+
+.confirmacao{
+    box-shadow: 0px 5px 15px -9px  rgb(0, 0, 0);
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color:#EAEAEA;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+
+}
+.infpessoais{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 75%;
+}
+li{
+    color: #4F4F4F;
+    font-size: 20px;
+}
+h1{
+    font-size: 32px;
+    color: black;
+    font-weight: bolder;
+}
+p{
+    color: #6C6C6C;
+    text-align: center;
+    width: 100%;
+}
+
+button{
+    width: 35%;
+    height: 45%;
+    background-color:#70B9B4;
+    box-shadow: 0px 5px 15px -8px  rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    text-align: right;
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    user-select: none; 
+
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(104, 175, 171);
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    flex-direction: column;
+}
+
+
+#confiConsulta{
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    left: 46%;
+    top: 47%;
+    border-radius: 10px;
+    color: transparent;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+
+.infpessoais,.enviar,h1,li,button,ul,.confirmacao,.informacoes{
+    z-index: 1000!important;
+
+}
+
+
+
+
+.fakecontainer{
+    color: transparent!important;
+    margin-bottom: 25%;
+
+    width: 34%;
+    z-index: 0!important;
+    height: 73%;
+    
+    position: absolute;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+button:focus ~ .fakecontainer{
+    background-color: hsla(0, 0%, 92%, 0.725);
+    filter: blur(100%);
+    transition: 300ms;
+    
+    
+}
+button:focus{
+   filter: blur(100%);
+   background-color: rgba(104, 175, 171, 0.411);
+    cursor:default;
+    transition: 500ms;
+    &:hover{
+        cursor: default;
+        transform: scale(1);
+    }
+    
+}
+button:focus ~ #confiConsulta{
+    background-color: #70B9B4;
+    border: 1px solid black;
+    color: white;
+    transition: 1s;
+}
+
+#confiConsulta{
+    cursor: default;
+    user-select: none; 
+}
